@@ -2,66 +2,103 @@
   margin: 0px;
 }
 
+@media (max-width: 800px) {}
+
+body{
+  background: #222831;
+}
 navbar {
-  background: linear-gradient(#ffffff, #e0dedea9);
+  background: linear-gradient(#ffffff, #e0dedede);
   margin: 0px 2px 0px 2px;
   position: fixed;
   padding: 1px;
   color: rgb(40, 40, 40);
   width: 100%;
   height: fit-content;
-  border-radius: 0px 0px 30px 20px;
+  /* border-radius: 0px 0px 30px 20px; */
   box-shadow: rgba(0, 0, 0, 0.503) 0px 0px 10px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   z-index: 2;
   position: fixed;
+  overflow-x: hidden;
 }
+
+navbar {
+  background: linear-gradient(#ffffff, #e0dedede);
+  margin: 0px 2px 0px 0px;
+  position: fixed;
+  padding: 1px;
+  color: rgb(40, 40, 40);
+  width: 100%;
+  height: fit-content;
+  /* border-radius: 0px 0px 30px 20px; */
+  box-shadow: rgba(0, 0, 0, 0.503) 0px 0px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 2;
+  position: fixed;
+  overflow-x: hidden;
+}
+
+navbar div {
+  display: flex;
+  align-items: center;
+}
+
 navbar img {
-  width: 9vh;
-  margin: 5px 20px;
+  width: 8vh;
+  margin: 0px 20px;
+
 }
 
 navbar h1 {
-  margin-top: 2.5vh;
+  /* margin-top: 2.5vh; */
 }
+
 navbar ul {
   list-style-type: none;
   display: flex;
-  margin-top: 4vh;
-  
+  margin-top: 4.5vh;
+  margin-bottom: 4vh;
+
+
 }
+
 navbar ul li {
-  margin: 2px 20px;
+  margin: 2px 20px 0px 0px;
   font-weight: 900;
 }
+
 navbar ul li:nth-child(3) a {
   border: 3px solid rgb(64, 64, 224);
-  padding: 4px;
+  padding: 6px 8px;
   border-radius: 6px;
   color: rgb(64, 64, 224);
-  box-shadow:rgba(64, 64, 224, 0.56) 2px 0px 10px 1px;
+  box-shadow: rgba(64, 64, 224, 0.79) 0px 0px 10px 1px;
   font-weight: 900;
   text-decoration: none;
   transition: all ease 0.1s;
 }
-navbar ul li:nth-child(3) a:hover{
+
+navbar ul li:nth-child(3) a:hover {
   background-color: rgb(64, 64, 224);
   color: white;
-} 
+}
 
 .topheader {
   background: linear-gradient(#352f44, #222831);
-  height: 70vh;
+  height: 100vh;
   z-index: 0;
 }
 
 .headershodow {
   background-color: rgba(0, 0, 255, 0);
-  box-shadow:rgb(64, 64, 224) 2px 0px 1000px 200px;
+  box-shadow: rgb(64, 64, 224) 2px 0px 1000px 200px;
   width: 0.5%;
   height: 0.5%;
   margin: auto;
   border-radius: 100%;
 
 }
-
