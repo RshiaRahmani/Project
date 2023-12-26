@@ -2,62 +2,143 @@
   margin: 0px;
 }
 
+@font-face {
+  font-family: "ubunto";
+  src: local("Ubuntu-Bold.ttf"),
+    url("Content/Font/Ubuntu-Bold.ttf") format("opentype")
+}
+
+@media (max-width: 800px) {}
+
+body {
+  background: #222831;
+  font-family: ubunto;
+}
+
+/* open navbar */
+
 navbar {
-  background: linear-gradient(#ffffff, #e0dedea9);
+  background: linear-gradient(#ffffff, #e0dedede);
   margin: 0px 2px 0px 2px;
   position: fixed;
   padding: 1px;
   color: rgb(40, 40, 40);
   width: 100%;
   height: fit-content;
-  border-radius: 0px 0px 30px 20px;
+  /* border-radius: 0px 0px 30px 20px; */
   box-shadow: rgba(0, 0, 0, 0.503) 0px 0px 10px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   z-index: 2;
   position: fixed;
-}
-navbar img {
-  width: 9vh;
-  margin: 5px 20px;
+  overflow-x: hidden;
 }
 
-navbar h1 {
-  margin-top: 2.5vh;
+navbar {
+  background: linear-gradient(#ffffff, #e0dedede);
+  margin: 0px 2px 0px 0px;
+  position: fixed;
+  padding: 1px;
+  color: rgb(40, 40, 40);
+  width: 100%;
+  height: fit-content;
+  /* border-radius: 0px 0px 30px 20px; */
+  box-shadow: rgba(0, 0, 0, 0.503) 0px 0px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+  position: fixed;
+  overflow-x: hidden;
 }
+
+navbar div {
+  display: flex;
+  align-items: center;
+}
+
+navbar div a {
+  text-decoration: none;
+  color: #222831;
+}
+
+navbar img {
+  width: 8vh;
+  margin: 0px 20px;
+}
+
 navbar ul {
   list-style-type: none;
   display: flex;
-  margin-top: 4vh;
-  
+  margin-top: 4.5vh;
+  margin-bottom: 4vh;
 }
+
 navbar ul li {
-  margin: 2px 20px;
+  margin: 2px 3vh 0px 0px;
   font-weight: 900;
 }
+
+navbar ul li a {
+  color: #222831;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 navbar ul li:nth-child(3) a {
-  border: 3px solid rgb(64, 64, 224);
-  padding: 4px;
+  border: 3px solid rgba(59,130,246,255);
+  padding: 6px 8px;
   border-radius: 6px;
-  color: rgb(64, 64, 224);
-  box-shadow:rgba(64, 64, 224, 0.56) 2px 0px 10px 1px;
+  color: rgba(59,130,246,255);
+  box-shadow: rgba(59,130,246,255) 0px 0px 10px 1px;
   font-weight: 900;
   text-decoration: none;
   transition: all ease 0.1s;
 }
-navbar ul li:nth-child(3) a:hover{
-  background-color: rgb(64, 64, 224);
+
+navbar ul li:nth-child(3) a:hover {
+  background-color: rgba(59,130,246,255);
   color: white;
-} 
+}
+
+navbar div input {
+  background: rgb(243, 241, 241);
+  text-align: center;
+  color: #352f44c7;
+  border-radius: 20px;
+  border: 1px solid #2228318b;
+  padding: 8px 0px;
+  margin: 4px 30px 0px 0px;
+  width: 18vh;
+  transition: all ease 0.5s;
+}
+
+navbar div input:focus {
+  background: rgb(232, 232, 232);
+  box-shadow: rgba(59,130,246,255) 0px 0px 25px 2px;
+  outline: none;
+}
+
+.profile {
+  margin: 4px 30px 0px 0px;
+  width: 6vh;
+}
+
+/* close navbar */
+
+/* open main */
 
 .topheader {
   background: linear-gradient(#352f44, #222831);
-  height: 70vh;
+  height: 100vh;
   z-index: 0;
 }
 
 .headershodow {
   background-color: rgba(0, 0, 255, 0);
-  box-shadow:rgb(64, 64, 224) 2px 0px 1000px 200px;
+  box-shadow: rgb(64, 64, 224) 2px 0px 1000px 200px;
   width: 0.5%;
   height: 0.5%;
   margin: auto;
@@ -65,3 +146,9 @@ navbar ul li:nth-child(3) a:hover{
 
 }
 
+/* close main */
+
+/* open footer */
+
+
+/* close footer */
