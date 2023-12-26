@@ -2,11 +2,19 @@
   margin: 0px;
 }
 
+@font-face {
+  font-family: "ubunto";
+  src: local("Ubuntu-Bold.ttf"),
+  url("Content/Font/Ubuntu-Bold.ttf") format("opentype")
+}
+
 @media (max-width: 800px) {}
 
-body{
+body {
   background: #222831;
+  font-family: ubunto;
 }
+
 navbar {
   background: linear-gradient(#ffffff, #e0dedede);
   margin: 0px 2px 0px 2px;
@@ -46,7 +54,10 @@ navbar div {
   display: flex;
   align-items: center;
 }
-
+navbar div a{
+  text-decoration: none;
+  color: #222831;
+}
 navbar img {
   width: 8vh;
   margin: 0px 20px;
@@ -69,6 +80,11 @@ navbar ul {
 navbar ul li {
   margin: 2px 20px 0px 0px;
   font-weight: 900;
+}
+
+navbar ul li a{
+  color: #222831;
+  text-decoration: none;
 }
 
 navbar ul li:nth-child(3) a {
