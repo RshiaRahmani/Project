@@ -2,11 +2,6 @@
   margin: 0px;
 }
 
-.topheader{
-  background: linear-gradient(#352f44, #2a2438);
-  height: 70vh;
-}
-
 navbar {
   background: linear-gradient(#ffffff, #e0dedea9);
   margin: 0px 2px 0px 2px;
@@ -33,9 +28,34 @@ navbar ul {
   list-style-type: none;
   display: flex;
   margin-top: 4vh;
+  
 }
 navbar ul li {
   margin: 2px 20px;
   font-weight: 900;
+}
+navbar ul li:nth-child(3) a {
+  border: 3px solid green;
+  padding: 4px;
+  border-radius: 3px;
+  color: green;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.topheader {
+  background: linear-gradient(#352f44, #222831);
+  height: 70vh;
+  z-index: 0;
+}
+
+.headershodow {
+  background-color: rgba(0, 0, 255, 0);
+  box-shadow:rgb(64, 64, 224) 2px 0px 1000px 200px;
+  width: 0.5%;
+  height: 0.5%;
+  margin: auto;
+  border-radius: 100%;
+
 }
 
