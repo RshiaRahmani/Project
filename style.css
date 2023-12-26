@@ -2,6 +2,11 @@
   margin: 0px;
 }
 
+.topheader{
+  background: linear-gradient(#352f44, #2a2438);
+  height: 70vh;
+}
+
 navbar {
   background: linear-gradient(#ffffff, #e0dedea9);
   margin: 0px 2px 0px 2px;
@@ -13,10 +18,12 @@ navbar {
   border-radius: 0px 0px 30px 20px;
   box-shadow: rgba(0, 0, 0, 0.503) 0px 0px 10px;
   display: flex;
+  z-index: 2;
+  position: fixed;
 }
 navbar img {
   width: 9vh;
-  margin: 5px 15px;
+  margin: 5px 20px;
 }
 
 navbar h1 {
@@ -31,3 +38,4 @@ navbar ul li {
   margin: 2px 20px;
   font-weight: 900;
 }
+
