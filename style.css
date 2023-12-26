@@ -15,6 +15,8 @@ body {
   font-family: ubunto;
 }
 
+/* open navbar */
+
 navbar {
   background: linear-gradient(#ffffff, #e0dedede);
   margin: 0px 2px 0px 2px;
@@ -45,6 +47,7 @@ navbar {
   box-shadow: rgba(0, 0, 0, 0.503) 0px 0px 10px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   z-index: 2;
   position: fixed;
   overflow-x: hidden;
@@ -73,30 +76,59 @@ navbar ul {
 }
 
 navbar ul li {
-  margin: 2px 25px 0px 0px;
+  margin: 2px 3vh 0px 0px;
   font-weight: 900;
 }
 
 navbar ul li a {
   color: #222831;
   text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 navbar ul li:nth-child(3) a {
-  border: 3px solid rgb(64, 64, 224);
+  border: 3px solid rgba(59,130,246,255);
   padding: 6px 8px;
   border-radius: 6px;
-  color: rgb(64, 64, 224);
-  box-shadow: rgba(64, 64, 224, 0.79) 0px 0px 10px 1px;
+  color: rgba(59,130,246,255);
+  box-shadow: rgba(59,130,246,255) 0px 0px 10px 1px;
   font-weight: 900;
   text-decoration: none;
   transition: all ease 0.1s;
 }
 
 navbar ul li:nth-child(3) a:hover {
-  background-color: rgb(64, 64, 224);
+  background-color: rgba(59,130,246,255);
   color: white;
 }
+
+navbar div input {
+  background: rgb(243, 241, 241);
+  text-align: center;
+  color: #352f44c7;
+  border-radius: 20px;
+  border: 1px solid #2228318b;
+  padding: 8px 0px;
+  margin: 4px 30px 0px 0px;
+  width: 18vh;
+  transition: all ease 0.5s;
+}
+
+navbar div input:focus {
+  background: rgb(232, 232, 232);
+  box-shadow: rgba(59,130,246,255) 0px 0px 25px 2px;
+  outline: none;
+}
+
+.profile {
+  margin: 4px 30px 0px 0px;
+  width: 6vh;
+}
+
+/* close navbar */
+
+/* open main */
 
 .topheader {
   background: linear-gradient(#352f44, #222831);
@@ -113,3 +145,10 @@ navbar ul li:nth-child(3) a:hover {
   border-radius: 100%;
 
 }
+
+/* close main */
+
+/* open footer */
+
+
+/* close footer */
