@@ -5,7 +5,7 @@
 @font-face {
   font-family: "ubunto";
   src: local("Ubuntu-Bold.ttf"),
-  url("Content/Font/Ubuntu-Bold.ttf") format("opentype")
+    url("Content/Font/Ubuntu-Bold.ttf") format("opentype")
 }
 
 @media (max-width: 800px) {}
@@ -54,18 +54,15 @@ navbar div {
   display: flex;
   align-items: center;
 }
-navbar div a{
+
+navbar div a {
   text-decoration: none;
   color: #222831;
 }
+
 navbar img {
   width: 8vh;
   margin: 0px 20px;
-
-}
-
-navbar h1 {
-  /* margin-top: 2.5vh; */
 }
 
 navbar ul {
@@ -73,16 +70,14 @@ navbar ul {
   display: flex;
   margin-top: 4.5vh;
   margin-bottom: 4vh;
-
-
 }
 
 navbar ul li {
-  margin: 2px 20px 0px 0px;
+  margin: 2px 25px 0px 0px;
   font-weight: 900;
 }
 
-navbar ul li a{
+navbar ul li a {
   color: #222831;
   text-decoration: none;
 }
