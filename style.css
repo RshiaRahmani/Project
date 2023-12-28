@@ -71,18 +71,18 @@ navbar ul li a {
 }
 
 navbar ul li:nth-child(3) a {
-  border: 3px solid rgba(59,130,246,255);
+  border: 3px solid rgba(59, 130, 246, 255);
   padding: 6px 8px;
   border-radius: 6px;
-  color: rgba(59,130,246,255);
-  box-shadow: rgba(59,130,246,255) 0px 0px 10px 1px;
+  color: rgba(59, 130, 246, 255);
+  box-shadow: rgba(59, 130, 246, 255) 0px 0px 10px 1px;
   font-weight: 900;
   text-decoration: none;
   transition: all ease 0.1s;
 }
 
 navbar ul li:nth-child(3) a:hover {
-  background-color: rgba(59,130,246,255);
+  background-color: rgba(59, 130, 246, 255);
   color: white;
 }
 
@@ -100,7 +100,7 @@ navbar div input {
 
 navbar div input:focus {
   background: rgb(232, 232, 232);
-  box-shadow: rgba(59,130,246,255) 0px 0px 25px 2px;
+  box-shadow: rgba(59, 130, 246, 255) 0px 0px 25px 2px;
   outline: none;
 }
 
@@ -112,7 +112,7 @@ a .profile {
   border-radius: 100px;
 }
 
-/* .userbox{
+.userbox {
   position: absolute;
   z-index: 3;
   float: right;
@@ -125,32 +125,37 @@ a .profile {
   padding: 20px;
 
 }
+
 input:focus .userbox {
   background: blue;
   display: none;
 }
 
-.profile1{
+.profile1 {
   width: 10vh;
   border: 4px solid rgb(15, 176, 15);
   border-radius: 50px;
 }
 
-.userbox div:nth-child(){
+.userbox div:nth-child() {
   display: inline-block;
   white-space: nowrap;
 }
-.userbox div div{
+
+.userbox div div {
   margin: 10px 0px 0px 0px;
   color: #ffffff;
 }
-.userbox div div h4{
+
+.userbox div div h4 {
   margin: 8px 0px;
 }
-.userbox div div h5{
+
+.userbox div div h5 {
   margin: 3px 0px;
 }
-.logout{
+
+.logout {
   margin-top: 20px;
   border: red 1px solid;
   border-radius: 5px;
@@ -160,15 +165,18 @@ input:focus .userbox {
   text-decoration: none;
   color: rgba(255, 0, 0, 0.771);
 }
-.logout:hover{
+
+.logout:hover {
   color: #ffffff;
   background: rgba(255, 0, 0, 0.74);
-} */
+}
 
 
 /* close navbar */
 
 /* open main */
+
+/* section 1 open */
 
 .topheader {
   background: linear-gradient(#352f44, #222831);
@@ -192,55 +200,143 @@ input:focus .userbox {
   padding: 10px 60px;
   color: #d8d4d4;
 }
+
 .section1 div h1 {
   font-size: 350%;
   margin-top: 5%;
 }
-.section1 div{
+
+.section1 div {
   width: 500%;
 }
-.section1 div img{
+
+.section1 div img {
   filter: saturate(1.3);
 }
-.section2{
-  border-radius: 30px;
-  background: linear-gradient(135deg,#1d1d1f,#202022);
-  height: fit-content;
-  box-shadow: #202022f7 0px 0px 20px 10px;
-  margin: 50px 40px;
-  text-align: center;
-}
+
+/* section 1 close */
 
 /* section 2 open */
 
-.container{
+.container {
+  color: #1d1d1f;
+  text-align: center;
   margin: 0px 0px;
+  display: flex;
+  justify-content: center;
   padding: 20px 0px;
   width: 100%;
   margin: auto;
 
 }
-.card1{
-  background: linear-gradient(-45deg,rgba(59,130,246,255),rgba(159,150,246,255));
+
+.card1 {
+  background: linear-gradient(-45deg, rgba(59, 130, 246, 255), rgba(159, 150, 246, 255));
   width: 20%;
-  height: 20em;
+  height: 11em;
   display: inline-block;
-  border-radius:  20px;
+  border-radius: 20px;
   padding: 4px;
   margin: 10px 1%;
   overflow: hidden;
+  transition: all ease-out 0.5s;
 }
 
-.card1 div{
+.card1:hover {
+  background: linear-gradient(-45deg, rgba(59, 130, 246, 255), rgba(159, 150, 246, 255));
+  width: 20%;
+  height: 25em;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 4px;
+  margin: 10px 1%;
+  overflow: hidden;
+  box-shadow: rgba(59, 130, 246, 255) 0px 0px 10px 3px;
+}
+
+.card1 div div:first-child {
+  font-size: 110%;
+  width: 100%;
+  height: 20vh;
+  border-radius: 20px;
+  background: linear-gradient(-45deg, rgba(19, 130, 246, 255), rgba(159, 150, 246, 255));
+  text-align: center;
+  clip-path: circle(65% at 50% 1%);
+  padding-top: 25px;
+}
+
+.card1 div:first-child {
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  background: linear-gradient(135deg,#151516,#202022);
-  text-align: center;
+  background: linear-gradient(135deg, #151516, #202022);
 }
 
+.card1 div:nth-child(2) h4 {
+  margin-top: 20px;
+  padding: 0px 15px;
+  text-align: justify;
+  color: rgb(203, 199, 199);
+}
+
+.card1 div:nth-child(2) a {
+  background: #1d1d1f;
+  color: white;
+  text-decoration: none;
+  border: 3px solid rgba(59, 130, 246, 255);
+  padding: 5px 40px;
+  margin-top: 0px;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+}
+
+.card1 div:nth-child(2) a:hover {
+  background: linear-gradient(-45deg, rgba(19, 130, 246, 255), rgba(159, 150, 246, 255));
+  color: #1d1d1f;
+  text-decoration: none;
+  border: 2px solid rgba(59, 130, 246, 155);
+  padding: 5px 70px;
+  border-radius: 20px;
+}
 
 /* section 2 close */
+
+/* section 3 open */
+
+.section2 {
+  border-radius: 30px;
+  background: linear-gradient(135deg, #1d1d1f, #202022);
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: #202022f7 0px 0px 20px 10px;
+  margin: 50px 40px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.section2 div{
+  width: 50%;
+  text-align: center;
+}
+.section2 div:first-child{
+  display: flex;
+  flex-direction: column;
+  box-shadow: #202022 0px 0px 10px 0px;
+  padding: 50px;
+  color: #d8d4d4;
+  text-align: justify;
+  filter: opacity(0.8);
+}
+.section2 div:last-child {
+  width: 50%;
+  filter: opacity(1);
+  clip-path: circle(65% at 50% 30%);
+
+}
+
+/* section 3 close */
 
 
 /* close main */
