@@ -204,7 +204,7 @@ input:focus .userbox {
 }
 .section2{
   border-radius: 30px;
-  background: linear-gradient(135deg,#121214,#202022);
+  background: linear-gradient(135deg,#1d1d1f,#202022);
   height: fit-content;
   box-shadow: #202022f7 0px 0px 20px 10px;
   margin: 50px 40px;
@@ -221,13 +221,22 @@ input:focus .userbox {
 
 }
 .card1{
-  background: linear-gradient(45deg,rgb(225, 225, 225),white);
+  background: linear-gradient(-45deg,rgba(59,130,246,255),rgba(159,150,246,255));
   width: 20%;
   height: 20em;
   display: inline-block;
   border-radius:  20px;
+  padding: 4px;
   margin: 10px 1%;
   overflow: hidden;
+}
+
+.card1 div{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(135deg,#151516,#202022);
+  text-align: center;
 }
 
 
