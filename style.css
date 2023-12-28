@@ -202,13 +202,36 @@ input:focus .userbox {
 .section1 div img{
   filter: saturate(1.3);
 }
-main div:nth-child(3){
+.section2{
   border-radius: 30px;
   background: linear-gradient(135deg,#121214,#202022);
-  height: 70vh;
+  height: fit-content;
   box-shadow: #202022f7 0px 0px 20px 10px;
   margin: 50px 40px;
+  text-align: center;
 }
+
+/* section 2 open */
+
+.container{
+  margin: 0px 0px;
+  padding: 20px 0px;
+  width: 100%;
+  margin: auto;
+
+}
+.card1{
+  background: linear-gradient(45deg,rgb(225, 225, 225),white);
+  width: 20%;
+  height: 20em;
+  display: inline-block;
+  border-radius:  20px;
+  margin: 10px 1%;
+  overflow: hidden;
+}
+
+
+/* section 2 close */
 
 
 /* close main */
