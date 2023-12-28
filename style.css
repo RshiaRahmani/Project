@@ -17,23 +17,6 @@ body {
 
 /* open navbar */
 
-navbar {
-  background: linear-gradient(#ffffff, #e0dedede);
-  margin: 0px 2px 0px 2px;
-  position: fixed;
-  padding: 1px;
-  color: rgb(40, 40, 40);
-  width: 100%;
-  height: fit-content;
-  /* border-radius: 0px 0px 30px 20px; */
-  box-shadow: rgba(0, 0, 0, 0.503) 0px 0px 10px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  z-index: 2;
-  position: fixed;
-  overflow-x: hidden;
-}
 
 navbar {
   background: linear-gradient(#ffffff, #e0dedede);
@@ -42,15 +25,15 @@ navbar {
   padding: 1px;
   color: rgb(40, 40, 40);
   width: 100%;
-  height: fit-content;
+  height: 90px;
   /* border-radius: 0px 0px 30px 20px; */
   box-shadow: rgba(0, 0, 0, 0.503) 0px 0px 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   z-index: 2;
-  position: fixed;
   overflow-x: hidden;
+  box-shadow: #202022d3 0px 0px 20px 5px;
 }
 
 navbar div {
@@ -124,6 +107,9 @@ navbar div input:focus {
 a .profile {
   margin: 4px 30px 0px 0px;
   width: 6vh;
+  padding: 2px;
+  border: 3px solid #556080;
+  border-radius: 100px;
 }
 
 /* .userbox{
@@ -192,29 +178,12 @@ input:focus .userbox {
 
 .headershodow {
   background-color: rgba(0, 0, 255, 0);
-  box-shadow: rgb(64, 64, 224) 2px 0px 1000px 200px;
+  box-shadow: rgb(64, 64, 224) 275px 400px 1000px 220px;
   width: 0.5%;
   height: 0.5%;
   margin: auto;
   border-radius: 100%;
 
-}
-
-.container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  
-}
-
-.code{
-  width: 150px;
-  height: 275px;
-  margin-left: 10px;
-  box-shadow: 0px 0px rgba(0, 0, 0, 0.503);
-  display: inline-block;
-  vertical-align: top;
-  background-color: white;
-  border-style: solid;
 }
 
 /* close main */
