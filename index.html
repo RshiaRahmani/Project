@@ -5,14 +5,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="script.js"></script>
   <link rel="icon" href="Content/Icon.png" type="image/icon type" />
   <title>Codico | Home</title>
 </head>
 
 <body>
+
+    <div id="login" class="login">
+      <div>
+        <h1>LOG IN</h1>
+        <form action="">
+          <input id="LGinp1" type="text" placeholder="Username">
+      <br><br>
+          <input id="LGinp2" type="password" placeholder="Password">
+          <h6>*Your Password must contain be atleast 6 charactors</h6>
+          <div><br>
+           <h4>I agree with the terms and conditions</h4>
+           <input id="LGinp3" type="checkbox" name="" id="">
+          </div><br>
+          <a href="#" onclick="login()">Enter</a><br><br><br>
+        </form>
+      </div>
+  </div>
+
   <!-- header section open -->
   <header>
-    <navbar class="nav">
+    <navbar id="nav" class="nav">
       <div>
         <div>
           <img src="./Content/Icon.png" alt="Codico Logo" />
@@ -25,36 +44,38 @@
           <li><a href="#">JOIN NOW</a></li>
         </ul>
       </div>
+
       <div class="usersection">
         <input type="text" placeholder="Search">
-        <a href="#"><img class="profile" src="Content/userprofile.png" alt="user profile"></a>
+        <a href="#"><img onclick="UserBox()" class="profile" src="Content/userprofile.png" alt="user profile"></a>
       </div>
       </div>
     </navbar>
-    <div class="userbox">
+    <div id="userbox" class="userbox">
       <div>
         <div style="text-align: center;">
           <a href="#"><img class="profile1" src="Content/userprofile.png" alt="user profile"></a>
         </div>
         <div>
-          <h4>Mr bean</h4>
+          <h4 id="userProName">Mr bean</h4>
           <h5>teddy1958@hoho.com</h5>
           <h5> Status : Active </h5>
         </div>
       </div><br>
       <div style="text-align: center;"><a class="logout" href="">LOG OUT</a></div>
     </div>
+
   </header>
   <!-- header section close -->
   <!-- main section open -->
   <!-- section 1 open -->
-  <main>
+  <main id="main">
     <div class="topheader">
       <div class="headershodow"></div>
       <!-- section 1 open -->
       <div class="section1">
         <div>
-          <h1> Welcome Back, Mr. bean <img src="Content/main/hand.png" alt="wave hand" width="45px"></h1>
+          <h1 id="welcome"> Welcome Back, Mr. bean <img src="Content/main/hand.png" alt="wave hand" width="45px"></h1>
         </div>
         <div>
           <img src="Content/main/programming workshop.png" width="80%" alt="">
@@ -139,16 +160,33 @@
       <!-- section 3 open -->
 
       <div class="section2">
-
-        <div>        <h1>PROGRAMMING W0RKSHOP</h1><HR></HR> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolores quidem illum vitae ullam veniam, vero eligendi delectus exercitationem. In nulla laborum veritatis veniam molestias cum ad consequatur voluptatum molestiae?
-        Sequi dolore officia velit in? Provident omnis vitae, voluptatum ab excepturi exercitationem! Rerum, qui quisquam ab id, sint ipsa voluptates maxime, iusto consequuntur odit aspernatur voluptatem tempora eveniet unde nemo?
-        Alias tempore aspernatur cumque eos quibusdam est quaerat vitae error a maiores reprehenderit voluptas voluptate illo consectetur reiciendis vero repellendus sequi numquam dolor, unde harum facilis, accusamus iste cum. Tempore!
-        Alias neque vero recusandae incidunt adipisci quidem. Soluta iure hic, recusandae vitae quaerat eligendi incidunt minus reiciendis ducimus ab ipsa odit corrupti, error voluptatum quas illum cum. Animi, esse necessitatibus.
-        In expedita at eveniet veritatis aspernatur odio maxime nobis deserunt nulla dignissimos perferendis vero obcaecati qui deleniti accusantium facilis autem id, blanditiis iure magnam. Voluptatem aspernatur veniam voluptas facilis similique.</div>
+      
         <div>
+          <h1>PROGRAMMING W0RKSHOP</h1>
+          <HR>
+          </HR> <br> Join us for an electrifying journey into the heart of web development! Our immersive workshop is a
+          gateway to the captivating world of coding, designed especially for enthusiastic beginners and aspiring web
+          creators. Get ready to unlock the secrets of HTML, CSS, and JavaScript as we guide you step-by-step through the
+          exhilarating process of crafting your very own website from scratch. No prior coding experience? No problem! Our
+          seasoned developers will demystify the essentials, ensuring everyone can dive headfirst into this hands-on
+          experience. Engage in interactive sessions, tackle real-world exercises, and embrace a supportive environment where
+          questions are welcomed and solutions are discovered together. By the end of this adventure, you'll not only have a
+          functional website to call your own but also a newfound confidence to continue your journey as a web creator. Seats
+          are limited,
+          so grab this opportunity to ignite your passion for web development!🚀
+          <br><br>
+          <ul>
+            <li>Date: [Insert Date(s)]</li>
+            <li>Time: [Insert Time]</li>
+            <li> Location: [Insert Location/Venue] </li>
+            <li> Requirements: Bring your laptop!
+            </li>
+            <li>Limited Seats: Reserve your spot now!</li>
+          </ul></div>
           <div>
-            <img src="Content/main/programming workshop.png" alt="">
-          </div>
+            <!-- <div>
+            <img src="Content/Section 3/test2.png" alt="">
+          </div> -->
         </div>
       </div>
       <!-- section 3 close -->

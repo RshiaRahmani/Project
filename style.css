@@ -15,6 +15,82 @@ body {
   font-family: ubunto;
 }
 
+main , navbar {
+  filter: blur(1.5rem) saturate(0.7);
+}
+
+/* log in promp open */
+  .login{
+    height: 110rem;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    align-items: center;
+
+  }
+  .login div:first-child{
+    color: #d8d4d4;
+    height: 50vh;
+    width: 40%;
+    position: fixed;
+    background:linear-gradient(#352f44, #222831);
+    margin: 20vh 27%;
+    border-radius: 30px;
+    box-shadow: #202022b7 0px 0px 20px 5px;
+    text-align: center;
+    padding: 40px;
+  }
+
+ #LGinp1,#LGinp2{
+    margin-top: 15px;
+    background: rgba(243, 241, 241, 0);
+    text-align: center;
+    color: #e6e2ef;
+    border-radius: 20px;
+    border: 1px solid #a0a1a3b3;
+    width: 90%;
+    padding: 8px 0px;
+    transition: all ease 0.5s;
+  }
+  #LGinp1:focus,#LGinp2:focus{
+    outline: none;
+    box-shadow: rgba(59, 130, 246, 255) 0px 0px 5px 2px;
+  }
+  .login form{
+    width: 100%;
+    margin-top: 60px;
+    overflow: hidden;
+  }
+  .login h6{
+    float: left;
+    margin-left: 8%;
+    margin-top: 5px;
+    color: #5a5a5c;
+  }
+  .login form div{
+    margin-top: 60px;
+    
+  }
+  #LGinp3{
+  }
+
+.login h4{
+
+}
+
+  .login form a {
+
+    color: white;
+    text-decoration: none;
+    border: 3px solid rgba(59, 130, 246, 255);
+    padding: 5px 40px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+  }
+
+/* log in promp close */
+
 /* open navbar */
 
 
@@ -113,6 +189,7 @@ a .profile {
 }
 
 .userbox {
+  display: none;
   position: absolute;
   z-index: 3;
   float: right;
@@ -324,16 +401,23 @@ input:focus .userbox {
   display: flex;
   flex-direction: column;
   box-shadow: #202022 0px 0px 10px 0px;
-  padding: 50px;
+  padding: 80px;
   color: #d8d4d4;
   text-align: justify;
-  filter: opacity(0.8);
+  filter: opacity(0.6);
 }
 .section2 div:last-child {
-  width: 50%;
+  width: 40%;
   filter: opacity(1);
-  clip-path: circle(65% at 50% 30%);
+  background: url(Content/Section\ 3/test2.png);
+  background-size: cover;
+  clip-path: circle(75% at 80% 40%);
+  
+ 
 
+}
+.section2 img{
+ 
 }
 
 /* section 3 close */
