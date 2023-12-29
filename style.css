@@ -24,7 +24,7 @@ main,navbar {
 
 /* log in promp open */
 .login {
-  height: 110rem;
+  overflow: hidden;
   width: 100%;
   position: absolute;
   z-index: 5;
@@ -33,7 +33,7 @@ main,navbar {
 
 .login div:first-child {
   color: #d8d4d4;
-  height: 50vh;
+  height: fit-content;
   width: 40%;
   position: fixed;
   background: linear-gradient(#352f44, #222831);
