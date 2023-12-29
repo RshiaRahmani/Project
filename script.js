@@ -20,7 +20,8 @@ function login(){
             if (document.getElementById('LGinp3').checked) {
                 document.getElementById('login').style.display = "none";
                 document.getElementById('nav').style.filter = "blur(0rem) saturate(1)";
-                document.getElementById('main').style.filter = "blur(0rem) saturate(1)";           
+                document.getElementById('main').style.filter = "blur(0rem) saturate(1)";  
+                alert('You successfully loged in');   
             } else {
 
                 document.getElementById('LGinp3').style.outline = "1px solid red";
@@ -28,6 +29,7 @@ function login(){
             } 
         }     
     }
+   
 }
 
 function UserBox(){

@@ -1,5 +1,6 @@
 * {
   margin: 0px;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -15,79 +16,90 @@ body {
   font-family: ubunto;
 }
 
-main , navbar {
+main,navbar {
   filter: blur(1.5rem) saturate(0.7);
+  transition: all ease 0.6s;
+
 }
 
 /* log in promp open */
-  .login{
-    height: 110rem;
-    width: 100%;
-    position: absolute;
-    z-index: 5;
-    align-items: center;
+.login {
+  height: 110rem;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  align-items: center;
+}
 
-  }
-  .login div:first-child{
-    color: #d8d4d4;
-    height: 50vh;
-    width: 40%;
-    position: fixed;
-    background:linear-gradient(#352f44, #222831);
-    margin: 20vh 27%;
-    border-radius: 30px;
-    box-shadow: #202022b7 0px 0px 20px 5px;
-    text-align: center;
-    padding: 40px;
-  }
+.login div:first-child {
+  color: #d8d4d4;
+  height: 50vh;
+  width: 40%;
+  position: fixed;
+  background: linear-gradient(#352f44, #222831);
+  margin: 20vh 27%;
+  border-radius: 30px;
+  box-shadow: #202022b7 0px 0px 20px 5px;
+  text-align: center;
+  padding: 40px;
+}
 
- #LGinp1,#LGinp2{
-    margin-top: 15px;
-    background: rgba(243, 241, 241, 0);
-    text-align: center;
-    color: #e6e2ef;
-    border-radius: 20px;
-    border: 1px solid #a0a1a3b3;
-    width: 90%;
-    padding: 8px 0px;
-    transition: all ease 0.5s;
-  }
-  #LGinp1:focus,#LGinp2:focus{
-    outline: none;
-    box-shadow: rgba(59, 130, 246, 255) 0px 0px 5px 2px;
-  }
-  .login form{
-    width: 100%;
-    margin-top: 60px;
-    overflow: hidden;
-  }
-  .login h6{
-    float: left;
-    margin-left: 8%;
-    margin-top: 5px;
-    color: #5a5a5c;
-  }
-  .login form div{
-    margin-top: 60px;
-    
-  }
-  #LGinp3{
-  }
+#LGinp1,
+#LGinp2 {
+  margin-top: 15px;
+  background: rgba(243, 241, 241, 0);
+  text-align: center;
+  color: #e6e2ef;
+  border-radius: 20px;
+  border: 1px solid #a0a1a3b3;
+  width: 90%;
+  padding: 8px 0px;
+  transition: all ease 0.5s;
+}
 
-.login h4{
+#LGinp1:focus,
+#LGinp2:focus {
+  outline: none;
+  box-shadow: rgba(59, 130, 246, 255) 0px 0px 5px 2px;
+}
+
+.login form {
+  width: 100%;
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.login h6 {
+  float: left;
+  margin-left: 8%;
+  margin-top: 5px;
+  color: #5a5a5c;
+}
+
+.login form div {
+  margin-top: 60px;
 
 }
 
-  .login form a {
+#LGinp3 {
+}
 
-    color: white;
-    text-decoration: none;
-    border: 3px solid rgba(59, 130, 246, 255);
-    padding: 5px 40px;
-    margin: 20px 0px;
-    border-radius: 10px;
-    transition: all ease 0.5s;
-  }
+.login h4{
+  text-decoration: underline;
+  text-decoration-color: rgba(59, 130, 246, 255) ;
+  font-size: 90%;
+}
+
+.login form a {
+
+  color: white;
+  text-decoration: none;
+  border: 3px solid rgba(59, 130, 246, 255);
+  padding: 5px 40px;
+  margin: 20px 0px;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+}
 
 /* log in promp close */
 
@@ -117,7 +129,7 @@ navbar div {
   align-items: center;
 }
 
-navbar div a {
+navbar div a{
   text-decoration: none;
   color: #222831;
 }
@@ -190,7 +202,7 @@ a .profile {
 
 .userbox {
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 3;
   float: right;
   width: 12%;
@@ -393,11 +405,13 @@ input:focus .userbox {
   overflow: hidden;
 }
 
-.section2 div{
+
+.section2 div {
   width: 50%;
   text-align: center;
 }
-.section2 div:first-child{
+
+.section2 div:first-child {
   display: flex;
   flex-direction: column;
   box-shadow: #202022 0px 0px 10px 0px;
@@ -406,19 +420,16 @@ input:focus .userbox {
   text-align: justify;
   filter: opacity(0.6);
 }
+
 .section2 div:last-child {
   width: 40%;
   filter: opacity(1);
   background: url(Content/Section\ 3/test2.png);
   background-size: cover;
   clip-path: circle(75% at 80% 40%);
-  
- 
+}
 
-}
-.section2 img{
- 
-}
+.section2 img {}
 
 /* section 3 close */
 
