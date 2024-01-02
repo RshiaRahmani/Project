@@ -1,0 +1,408 @@
+* {
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "ubunto";
+  src: local("Ubuntu-Bold.ttf"),
+    url("Content/Font/Ubuntu-Bold.ttf") format("opentype")
+}
+
+@media (max-width: 800px) {}
+
+body {
+  background: #222831;
+  font-family: ubunto;
+}
+
+:root{
+  --main-blue : rgba(59,130,246,255);
+}
+
+
+/* log in promp open */
+.login {
+  height: 110rem;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  align-items: center;
+}
+
+.login div:first-child {
+  color: #d8d4d4;
+  height: 50vh;
+  width: 40%;
+  position: fixed;
+  background: linear-gradient(#352f44, #222831);
+  margin: 20vh 27%;
+  border-radius: 30px;
+  box-shadow: #202022b7 0px 0px 20px 5px;
+  text-align: center;
+  padding: 40px;
+}
+
+#LGinp1,
+#LGinp2 {
+  margin-top: 15px;
+  background: rgba(243, 241, 241, 0);
+  text-align: center;
+  color: #e6e2ef;
+  border-radius: 20px;
+  border: 1px solid #a0a1a3b3;
+  width: 90%;
+  padding: 8px 0px;
+  transition: all ease 0.5s;
+}
+
+#LGinp1:focus,
+#LGinp2:focus {
+  outline: none;
+  box-shadow: rgba(59, 130, 246, 255) 0px 0px 5px 2px;
+}
+
+.login form {
+  width: 100%;
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.login h6 {
+  float: left;
+  margin-left: 8%;
+  margin-top: 5px;
+  color: #5a5a5c;
+}
+
+.login form div {
+  margin-top: 60px;
+
+}
+
+#LGinp3 {
+  margin: 0px;
+}
+
+.login h4{
+  text-decoration: underline;
+  text-decoration-color: rgba(59, 130, 246, 255) ;
+  font-size: 90%;
+}
+
+.login form a {
+
+  color: white;
+  text-decoration: none;
+  border: 3px solid rgba(59, 130, 246, 255);
+  padding: 5px 40px;
+  margin: 20px 0px;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+}
+
+/* log in promp close */
+
+/* open navbar */
+
+
+navbar {
+  background: linear-gradient(#ffffff, #e0dedede);
+  margin: 0px 2px 0px 0px;
+  position: fixed;
+  padding: 1px;
+  color: rgb(40, 40, 40);
+  width: 100%;
+  height: 90px;
+  /* border-radius: 0px 0px 30px 20px; */
+  box-shadow: rgba(0, 0, 0, 0.503) 0px 0px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+  overflow-x: hidden;
+  box-shadow: #202022d3 0px 0px 20px 5px;
+}
+
+navbar div {
+  display: flex;
+  align-items: center;
+}
+
+navbar div a{
+  text-decoration: none;
+  color: #222831;
+}
+
+navbar img {
+  width: 8vh;
+  margin: 0px 20px;
+}
+
+navbar ul {
+  list-style-type: none;
+  display: flex;
+  margin-top: 4.5vh;
+  margin-bottom: 4vh;
+}
+
+navbar ul li {
+  margin: 2px 3vh 0px 0px;
+  font-weight: 900;
+}
+
+navbar ul li a {
+  color: #222831;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+navbar ul li:nth-child(3) a {
+  border: 3px solid rgba(59, 130, 246, 255);
+  padding: 6px 8px;
+  border-radius: 6px;
+  color: rgba(59, 130, 246, 255);
+  box-shadow: rgba(59, 130, 246, 255) 0px 0px 10px 1px;
+  font-weight: 900;
+  text-decoration: none;
+  transition: all ease 0.1s;
+}
+
+navbar ul li:nth-child(3) a:hover {
+  background-color: rgba(59, 130, 246, 255);
+  color: white;
+}
+
+navbar div input {
+  background: rgb(243, 241, 241);
+  text-align: center;
+  color: #352f44c7;
+  border-radius: 20px;
+  border: 1px solid #2228318b;
+  padding: 8px 0px;
+  margin: 4px 30px 0px 0px;
+  width: 18vh;
+  transition: all ease 0.5s;
+}
+
+navbar div input:focus {
+  background: rgb(232, 232, 232);
+  box-shadow: rgba(59, 130, 246, 255) 0px 0px 25px 2px;
+  outline: none;
+}
+
+a .profile {
+  margin: 4px 30px 0px 0px;
+  width: 6vh;
+  padding: 2px;
+  border: 3px solid #556080;
+  border-radius: 100px;
+}
+
+.userbox {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  float: right;
+  width: 12%;
+  height: fit-content;
+  border: white solid 1px;
+  border-radius: 10px;
+  background: linear-gradient(#352f44, #222831);
+  margin: 10vh 83%;
+  padding: 20px;
+
+}
+
+input:focus .userbox {
+  background: blue;
+  display: none;
+}
+
+.profile1 {
+  width: 10vh;
+  border: 4px solid rgb(15, 176, 15);
+  border-radius: 50px;
+}
+
+.userbox div:nth-child() {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.userbox div div {
+  margin: 10px 0px 0px 0px;
+  color: #ffffff;
+}
+
+.userbox div div h4 {
+  margin: 8px 0px;
+}
+
+.userbox div div h5 {
+  margin: 3px 0px;
+}
+
+.logout {
+  margin-top: 20px;
+  border: red 1px solid;
+  border-radius: 5px;
+  padding: 0.5vh 7vh;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(255, 0, 0, 0.771);
+}
+
+.logout:hover {
+  color: #ffffff;
+  background: rgba(255, 0, 0, 0.74);
+}
+
+
+/* close navbar */
+
+/* open main */
+
+/* section 1 open */
+
+.topheader {
+  background: linear-gradient(#352f44, #222831);
+  height: 100vh;
+  z-index: 0;
+}
+
+.headershodow {
+  background-color: rgba(0, 0, 255, 0);
+  box-shadow: rgba(84,64, 224, 0.689) 0px 110px 1000px 200px;
+  margin: auto;
+  border-radius: 100%;
+
+}
+
+.section1 {
+  display: flex;
+  justify-content: center;
+  font-size: 500%;
+  margin-top: 20VH;
+  padding: 10px 60px;
+  color: #d8d4d4;
+}
+
+
+/* section 1 close */
+
+/* section 2 open */
+
+.container {
+  color: #1d1d1f;
+  text-align: center;
+  margin: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0px;
+  width: 100%;
+  margin: auto;
+  
+}
+
+.section2 {
+  border-radius: 20px;
+  background: linear-gradient(135deg, #1d1d1f, #202022);
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: #202022f7 0px 0px 20px 10px;
+  margin: 10vh 30px;
+  text-align: center;
+  overflow: hidden;
+  height: fit-content;
+  padding: 40px 5px;
+}
+/* .card1 {
+  background: linear-gradient(-45deg, rgba(59, 130, 246, 255), rgba(159, 150, 246, 255));
+  height: 11em;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 4px;
+  margin: 10px 2%;
+  overflow: hidden;
+  transition: all ease-out 0.5s;
+} */
+
+table:first-child {
+  width: 90%;
+  color: white;
+  /* background-color: #5a5a5c; */
+  border-radius: 10px;
+  text-align: center;
+}
+table:nth-child(2){
+  width: 90%;
+  margin-top: 1vh;
+}
+table:nth-child(1) td{
+  background-color: white;
+  padding: 3px;
+  color: #1d1d1f;
+  border-radius: 5px;
+  box-shadow: rgba(255, 255, 255, 0.285) 0px 0px 10px 1px;
+}
+table th {
+  text-align: center;
+}
+table td input{
+  border: none;
+  font-weight: 900;
+}
+table td button{
+  border: 3px solid var(--main-blue);
+  border-radius: 5px;
+  padding: 4px;
+  width: 90%;
+  background: none;
+  font-weight: 600;
+  transition: all ease 0.1s;
+}
+
+table td button:hover{
+  color: white;
+  background: var(--main-blue);
+
+
+}
+
+/* section 2 close */
+
+/* section 3 open */
+
+
+
+.section2 div {
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+}
+
+.programmers {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+/* section 3 close */
+
+
+/* close main */
+
+/* open footer */
+
+
+/* close footer */

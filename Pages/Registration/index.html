@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="script2.js"></script>
+  <link rel="icon" href="Content/Icon.png" type="image/icon type" />
+  <title>Codico | Home</title>
+</head>
+
+<body>
+
+
+  <!-- header section open -->
+  <header>
+    <navbar id="nav" class="nav">
+      <div>
+        <div>
+          <img src="./Content/Icon.png" alt="Codico Logo" />
+          <h1><a href="">Codico</a></h1>
+        </div>
+
+        <ul>
+          <li><a href="#info">Home</a></li>
+          <li onclick="profile()"><a href="#">Contact us</a></li>
+          <li><a href="#">JOIN NOW</a></li>
+        </ul>
+      </div>
+
+      <div class="usersection">
+        <input type="text" placeholder="Search">
+        <a href="#"><img onclick="UserBox()" class="profile" src="Content/userprofile.png" alt="user profile"></a>
+      </div>
+      </div>
+    </navbar>
+   
+
+  </header>
+  <!-- header section close -->
+  <!-- main section open -->
+  <!-- section 1 open -->
+  <main id="main">
+    <div class="topheader">
+      <div class="headershodow"></div>
+      
+      
+
+      <div id="info" class="container">
+        <div class="section1">
+          <p>{ Registration Cost Calculation }</p>
+        </div>
+        <div class="section2">
+          <!-- <div class="card1">
+            <div class="programmers">
+              <img src="" alt="">
+            </div>
+          </div>
+          <div class="card1"></div>
+          <div class="card1"></div>-->
+          <table cellspacing="8">
+            <tr>
+              <th>Participant Type</th>
+              <th>Sessions</th>
+              <th>From</th>
+              <th>To</th>
+              <th>Cost</th>
+            </tr>
+            <tr>
+              <td rowspan="4" id="Participant">
+                <input type="radio" id="Presenter" name="Participant-Type" value="Presenter">
+                <label for="Presenter">Presenter (Є)</label><br>
+                <input type="radio" id="Audiance" name="Participant-Type" value=" Audiance">
+                <label for=" Audiance">Audiance (Є)</label><br>
+              </td>
+              <td><input type="checkbox" name="Session" id="session1"> Session 1 - price in Є</td>
+              <td rowspan="4"> <input type="date" id="dateFrom"></td>
+              <td rowspan="4"> <input type="date" id="dateTO"></td>
+              <td id="cost1"> </td>
+            </tr>
+            <tr>
+              <td> <input type="checkbox" name="Session" id="session2"> Session 2 - price in Є</td>
+              <td id="cost2"> </td>
+            </tr>
+            <tr>
+              <td> <input type="checkbox" name="Session" id="session3"> Session 3 - price in Є</td>
+              <td id="cost3"> </td>
+            </tr>
+            <tr>
+              <td> <input type="checkbox" name="Session" id="session4"> Session 4 - price in Є</td>
+              <td id="cost4"> </td>
+            </tr>
+            <tr>
+              <td colspan="2"> Total cost: </td>
+              <td colspan="2"> <button onclick="calc()">Calculate</button></td>
+              <td id="result"> 0 (Є)</td>
+            </tr>
+          </table>
+          <p style="color: red;"></p>
+
+         </div> 
+      </div>
+      
+  </main>
+  <!-- main section end -->
+  <!-- footer section start -->
+  <footer>
+
+  </footer>
+  <!-- footer section end -->
+  <script src="script2.js"></script>
+
+</body>
+
+</html>
