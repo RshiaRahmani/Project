@@ -371,7 +371,7 @@ input:focus .userbox {
   /*margin: 0 auto;*/
   padding: 5%;
 }
-label ,input{
+label ,.con-in{
   display: block;
 }
 
@@ -396,16 +396,16 @@ padding: 20px 0;
   color:#d8d4d4 ;
 
 }
-.contact-form >p , input,textarea,label {
+.contact-form >p , .con-in,textarea,label {
   font-family: "ubunto";
 }
-/*.contact-form >*/ input,textarea,label {
+/*.contact-form >*/ .con-in,textarea,label {
   display: block;
   margin: 0 auto ;
   width: 100%;
   color: #d8d4d4;
 }
-/*.contact-form >*/ input,textarea{ 
+/*.contact-form >*/ .con-in,textarea{ 
 background-color: transparent;
 border: 0;
 border-bottom: 2px solid #d8d4d4;
@@ -415,21 +415,24 @@ border-bottom: 2px solid #d8d4d4;
   padding: 15px 0;
   color: white;
   font-size: 18px;
-  border-bottom: none;
+  font-family:"ubunto" ;
+  border: none;
   margin-top: 30px;
   cursor: pointer;
   transition: all .3s ease;
+  display: block;
+  width: 100%;
 }
 .submit-button:hover{
   background: #fff;
   color: #1b1c1e;
 }
-/*.container >*/ input, textarea {
+/*.container >*/ .con-in, textarea {
   color:#d8d4d4 ;
   font-size: 18px;
   padding: 10px;
 }
-/*.contact-form> */input:focus, textarea:focus {
+/*.contact-form> */.con-in:focus, textarea:focus {
   outline:1px solid #d8d4d4;
 }
 
@@ -448,5 +451,5 @@ border-bottom: 2px solid #d8d4d4;
 /* general css */
 
 body{
-  margin-bottom: 1000px;
+  margin-bottom: 5%;
 }
