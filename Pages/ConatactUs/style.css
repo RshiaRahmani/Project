@@ -363,12 +363,12 @@ input:focus .userbox {
 /* contact us form */
 
 .contact-form{
-  margin: 0;
+  margin-top: 5%;
   padding: 0;
   box-sizing: border-box;
   text-align: center;
   max-width: 1320px;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   padding: 5%;
 }
 label ,input{
@@ -411,7 +411,7 @@ border: 0;
 border-bottom: 2px solid #d8d4d4;
 }
 .submit-button{
-  background-color: #556080;
+  background-color:rgba(84,64, 224, 0.689) ;
   padding: 15px 0;
   color: white;
   font-size: 18px;
