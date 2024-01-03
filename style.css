@@ -16,11 +16,16 @@ body {
   font-family: ubunto;
 }
 
-:root{
-  --main-blue : rgba(59,130,246,255);
+::-webkit-scrollbar {
+  display: none;
 }
 
-main,navbar {
+:root {
+  --main-blue: rgba(59, 130, 246, 255);
+}
+
+main,
+navbar {
   filter: blur(1.5rem) saturate(0.7);
   transition: all ease 0.6s;
 
@@ -89,9 +94,9 @@ main,navbar {
   margin: 0px;
 }
 
-.login h4{
+.login h4 {
   text-decoration: underline;
-  text-decoration-color: var(--main-blue) ;
+  text-decoration-color: var(--main-blue);
   font-size: 90%;
 }
 
@@ -134,7 +139,7 @@ navbar div {
   align-items: center;
 }
 
-navbar div a{
+navbar div a {
   text-decoration: none;
   color: #222831;
 }
@@ -163,7 +168,7 @@ navbar ul li a {
   overflow: hidden;
 }
 
-navbar ul li:nth-child(3) a {
+navbar ul li:nth-child(4) a {
   border: 3px solid var(--main-blue);
   padding: 6px 8px;
   border-radius: 6px;
@@ -174,7 +179,7 @@ navbar ul li:nth-child(3) a {
   transition: all ease 0.1s;
 }
 
-navbar ul li:nth-child(3) a:hover {
+navbar ul li:nth-child(4) a:hover {
   background-color: var(--main-blue);
   color: white;
 }
@@ -436,10 +441,8 @@ input:focus .userbox {
 
 /* section 3 close */
 
-
 /* close main */
 
 /* open footer */
-
 
 /* close footer */

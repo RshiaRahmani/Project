@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <script type="text/javascript" src="script2.js"></script>
   <link rel="icon" href="Content/Icon.png" type="image/icon type" />
-  <title>Codico | Home</title>
+  <title>Codico | Registration</title>
 </head>
 
 <body>
@@ -19,13 +19,14 @@
       <div>
         <div>
           <img src="./Content/Icon.png" alt="Codico Logo" />
-          <h1><a href="">Codico</a></h1>
+          <h1><a href="../../index.html">Codico</a></h1>
         </div>
 
         <ul>
-          <li><a href="#info">Home</a></li>
-          <li onclick="profile()"><a href="#">Contact us</a></li>
-          <li><a href="#">JOIN NOW</a></li>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="#">Info</a></li>
+          <li><a href="../ConatactUs/index.html">Contact us</a></li>
+          <li><a href="index.html">JOIN NOW</a></li>
         </ul>
       </div>
 
@@ -35,7 +36,7 @@
       </div>
       </div>
     </navbar>
-   
+
 
   </header>
   <!-- header section close -->
@@ -44,8 +45,8 @@
   <main id="main">
     <div class="topheader">
       <div class="headershodow"></div>
-      
-      
+
+      <p style="text-decoration: line-through;"></p>
 
       <div id="info" class="container">
         <div class="section1">
@@ -75,8 +76,8 @@
                 <label for=" Audiance">Audiance (Є)</label><br>
               </td>
               <td><input type="checkbox" name="Session" id="session1"> Session 1 - price in Є</td>
-              <td rowspan="4"> <input type="date" id="dateFrom"></td>
-              <td rowspan="4"> <input type="date" id="dateTO"></td>
+              <td rowspan="4" id="BoxDateFrom"> <input type="date" id="dateFrom"></td>
+              <td rowspan="4" id="BoxDateTo"> <input type="date" id="dateTo"></td>
               <td id="cost1"> </td>
             </tr>
             <tr>
@@ -97,11 +98,12 @@
               <td id="result"> 0 (Є)</td>
             </tr>
           </table>
-          <p style="color: red;"></p>
+          <h6>*Note that For attending more than two sessions & total cost of over 1000(Є) , 15% discount will be
+            counted.</h6>
 
-         </div> 
+        </div>
       </div>
-      
+
   </main>
   <!-- main section end -->
   <!-- footer section start -->

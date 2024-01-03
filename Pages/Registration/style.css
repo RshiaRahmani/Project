@@ -16,6 +16,10 @@ body {
   font-family: ubunto;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 :root{
   --main-blue : rgba(59,130,246,255);
 }
@@ -68,7 +72,7 @@ body {
   overflow: hidden;
 }
 
-.login h6 {
+.login h6  {
   float: left;
   margin-left: 8%;
   margin-top: 5px;
@@ -158,7 +162,7 @@ navbar ul li a {
   overflow: hidden;
 }
 
-navbar ul li:nth-child(3) a {
+navbar ul li:nth-child(4) a {
   border: 3px solid rgba(59, 130, 246, 255);
   padding: 6px 8px;
   border-radius: 6px;
@@ -169,7 +173,7 @@ navbar ul li:nth-child(3) a {
   transition: all ease 0.1s;
 }
 
-navbar ul li:nth-child(3) a:hover {
+navbar ul li:nth-child(4) a:hover {
   background-color: rgba(59, 130, 246, 255);
   color: white;
 }
@@ -319,7 +323,7 @@ input:focus .userbox {
   box-shadow: #202022f7 0px 0px 20px 10px;
   margin: 10vh 30px;
   text-align: center;
-  overflow: hidden;
+  overflow: scroll;
   height: fit-content;
   padding: 40px 5px;
 }
@@ -372,8 +376,12 @@ table td button{
 table td button:hover{
   color: white;
   background: var(--main-blue);
+}
 
-
+.section2 h6{
+  margin-top: 5px;
+  color: #5a5a5c;
+  text-decoration: underline;
 }
 
 /* section 2 close */
