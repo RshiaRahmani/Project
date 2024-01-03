@@ -16,6 +16,10 @@ body {
   font-family: ubunto;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* log in promp open */
 .login {
   height: 110rem;
@@ -79,9 +83,9 @@ body {
   margin: 0px;
 }
 
-.login h4{
+.login h4 {
   text-decoration: underline;
-  text-decoration-color: rgba(59, 130, 246, 255) ;
+  text-decoration-color: rgba(59, 130, 246, 255);
   font-size: 90%;
 }
 
@@ -99,7 +103,6 @@ body {
 /* log in promp close */
 
 /* open navbar */
-
 
 navbar {
   background: linear-gradient(#ffffff, #e0dedede);
@@ -124,7 +127,7 @@ navbar div {
   align-items: center;
 }
 
-navbar div a{
+navbar div a {
   text-decoration: none;
   color: #222831;
 }
@@ -153,7 +156,7 @@ navbar ul li a {
   overflow: hidden;
 }
 
-navbar ul li:nth-child(3) a {
+navbar ul li:nth-child(4) a {
   border: 3px solid rgba(59, 130, 246, 255);
   padding: 6px 8px;
   border-radius: 6px;
@@ -164,7 +167,7 @@ navbar ul li:nth-child(3) a {
   transition: all ease 0.1s;
 }
 
-navbar ul li:nth-child(3) a:hover {
+navbar ul li:nth-child(4) a:hover {
   background-color: rgba(59, 130, 246, 255);
   color: white;
 }
@@ -270,7 +273,7 @@ input:focus .userbox {
 
 .headershodow {
   background-color: rgba(0, 0, 255, 0);
-  box-shadow: rgba(84,64, 224, 0.689) 0px 110px 1000px 200px;
+  box-shadow: rgba(84, 64, 224, 0.689) 0px 110px 1000px 200px;
   margin: auto;
   border-radius: 100%;
 
