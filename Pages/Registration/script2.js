@@ -74,10 +74,19 @@ function calc(){
                 }
         
                 if( (secount>=2) && (totalPrice>=1000) ){
-                    document.getElementById('result').innerHTML = "<p style='text-decoration: line-through;''>"+(totalPrice)+"</p>"+(totalPrice*0.85)+" (Є) <br> <p style='color: red;''>(15% discount)</p> "
+                    document.getElementById('result').innerHTML = "<p style='text-decoration: line-through;''>"+(totalPrice)+"</p>"+(totalPrice*0.85)+" (Є) <br> <p style='color: red;''>(15% discount)</p> ";
                 }else{
                     document.getElementById('result').innerHTML = totalPrice+" (Є)"
                 }
+
+                setTimeout(function() {
+                    if(confirm('Do u confirm this purchase?')){
+                        alert('Thank you for choosing us!');
+                    }else{
+                        alert('application withdrawn')
+                    }
+                  }, 0);
+            
     
             }else{
                 document.getElementById('BoxDateTo').style = "border: 5px solid red;";
@@ -86,7 +95,6 @@ function calc(){
         }else{
             document.getElementById('BoxDateFrom').style = "border: 5px solid red;";
         }
-
 
 
     }else if(document.getElementById('Audiance').checked){ // if Audiance is selected
@@ -132,10 +140,19 @@ function calc(){
                 }
         
                 if( (secount>=2) && (totalPrice>=1000) ){
-                    document.getElementById('result').innerHTML = "<p style='text-decoration: line-through;''>"+(totalPrice)+"</p>"+(totalPrice*0.85)+" (Є) <br> <p style='color: red;''>(15% discount)</p> "
+                    document.getElementById('result').innerHTML = "<p style='text-decoration: line-through;''>"+(totalPrice)+"</p>"+(totalPrice*0.85)+" (Є) <br> <p style='color: red;''>(15% discount)</p> ";
+                    
                 }else{
                     document.getElementById('result').innerHTML = totalPrice+" (Є)"
                 }
+
+                setTimeout(function() {
+                    if(confirm('Do u confirm this purchase?')){
+                        alert('Thank you for choosing us!');
+                    }else{
+                        alert('application withdrawn')
+                    }
+                  }, 0);
     
             }else{
                 document.getElementById('BoxDateTo').style = "border: 5px solid red;";
