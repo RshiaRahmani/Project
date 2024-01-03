@@ -444,5 +444,10 @@ input:focus .userbox {
 /* close main */
 
 /* open footer */
-
+.footer{
+  background-color: #0e1419;
+  h1{
+    
+  }
+}
 /* close footer */
