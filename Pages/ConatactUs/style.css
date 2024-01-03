@@ -360,6 +360,68 @@ input:focus .userbox {
 
 /* section 3 close */
 
+/* contact us form */
+
+.contact-form{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.contact-form > form {
+max-width: 500px;
+margin: 0 auto;
+text-align: left;
+padding: 20px 0;
+
+}
+
+.contact-form > h1{
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 59px;
+  color: white;
+  font-weight: 600;
+  padding-bottom:20px ;
+}
+
+.contact-form > p{
+  color: #d2d2d2;
+
+}
+.contact-form >p.input.textarea.label {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+.contact-form > input.textarea.label {
+  display: block;
+  margin: 0 auto ;
+  width: 100%;
+  color: #828282;
+}
+.contact-form > input.textarea{ 
+background-color: transparent;
+border: 0;
+border-radius: 2px solid #828282;
+}
+.container > input[type-submit]{
+  background-color: #545557;
+  padding: 15px 0;
+  color: white;
+  font-size: 18px;
+  border-bottom: none;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.container > input[type-submit]:hover{
+  background: #fff;
+  color: #1b1c1e;
+}
 
 /* close main */
 
@@ -367,3 +429,10 @@ input:focus .userbox {
 
 
 /* close footer */
+
+
+/* general css */
+
+body{
+  margin-bottom: 1000px;
+}
