@@ -58,7 +58,7 @@
       <div class="contact-form">
        <h1>{Contact us}</h1>
        <p>Question not answered yet? We are here to help!</p>
-       <form action="">
+       <form action="" onsubmit="sendEmail(); reset(); return false;">
          <label for="name">Name</label>
          <input class="con-in" type="text" name="name" id="name">
          <label for="email">Email: </label>
@@ -70,7 +70,32 @@
          <input type="submit" value="send" class="submit-button">
        </form>
       </div>
-      
+      <script src="https://smtpjs.com/v3/smtp.js">
+      </script>
+      <script>
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click' , function (e){
+          e.preventDefault()
+          var name = document.getElementById('name').value;
+          var email = document.getElementById('email').value;
+          var subject = document.getElementById('subject').value;
+          var message= document.getElementById('message').value;
+          var body = 'name: '+name +'<br/> email: '+ email + '<br/> subject: '+subject + '<br/> message: ' + message;
+
+
+          Email.send({
+    SecureToken : "54bcded3-97d0-463d-bfe8-5427a29b37c3",
+    To : 'mahisa.academic@gmail.com',
+    From : "codico@gmail.com",
+    Subject : "contact message",
+    Body : body
+}).then(
+  message => alert(message)
+);
+
+
+        })
+      </script>
   </main>
   <!-- main section end -->
   <!-- footer section start -->
