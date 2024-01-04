@@ -436,6 +436,17 @@ input:focus .userbox {
 
 /* section 3 close */
 
+/* about us opens*/
+
+.main-plate{
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+.junior-plate{
+  background-color: red;
+  flex: 1;
+}
 
 /* close main */
 
