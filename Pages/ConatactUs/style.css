@@ -362,5 +362,61 @@ input:focus .userbox {
 
 /* open footer */
 
+.footer{
+  background-color: #202022;
+  overflow: hidden;
+}
+.containerr{
+ padding: 5% 10%;
 
+}
+.row {
+  display: flex;
+  width: 80%;
+  text-align: left;
+  flex-direction: row;
+  white-space: nowrap;
+  justify-content: space-between;
+  align-items: start;
+}
+.footer-col h1{
+  color:rgb(102, 101, 113);
+  margin-bottom: 20px;
+}
+.footer-col  ul{
+  list-style-type: none;
+  padding-inline-start: 10px;
+  vertical-align: 5px;
+}
+
+.footer-col:first-child ul{
+  font-size: 85%;
+  
+}
+.footer-col:first-child ul li{
+  margin-bottom: 10px;
+  
+}
+.footer-col:first-child a{
+
+}
+
+.footer-col ul A, .footer ul li{
+  color: gray;
+  text-decoration: none;
+  vertical-align: 5px;
+}
+.social-links ul a{
+  margin: 0px 5px;
+
+}
+.social-links ul a i{
+  width: 20px;
+  font-size: 3vh;
+  border: 2px solid gray;
+  border-radius: 15px;
+  text-align: center;
+  padding: 8px;
+  
+}
 /* close footer */
