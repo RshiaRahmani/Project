@@ -16,6 +16,10 @@ body {
   font-family: ubunto;
 }
 
+:root {
+  --main-blue: rgba(59, 130, 246, 255);
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -293,7 +297,18 @@ input:focus .userbox {
 
 /* section 2 open */
 .section2 img{
-  
+  animation: pic 5s infinite;
+  animation-timing-function: ease-in-out;
+}
+.section2 div p{
+  color: #d8d4d4;
+  text-align: left;
+  line-height: 25px;
+}
+@keyframes pic {
+  0% {margin-top: 25px;rotate:-5deg ;}
+  50% {margin-top: 75px;rotate: 5deg ;}
+  100% {margin-top: 25px;rotate: -5deg ;}
 }
 .container {
   color: #1d1d1f;
@@ -305,7 +320,9 @@ input:focus .userbox {
   padding: 20px 0px;
   width: 100%;
   margin: auto;
-
+}
+.section1 h1:first-child{
+  font-size: 90%;
 }
 
 .card1 {
@@ -334,12 +351,15 @@ input:focus .userbox {
   height: fit-content;
   padding: 40px;
 }
-.section2 h1{
+.section2  h1{
   text-align: center;
   text-decoration: solid;
-  color: gray;
+  color: var(--main-blue);
+  text-decoration: underline;
+  list-style: circle;
   font-size: xx-large;
   opacity:inherit;
+  margin: 1vh;
 }
 
 /* section 2 close */
@@ -351,7 +371,6 @@ input:focus .userbox {
 
 .section2 div {
   width: 50%;
-  text-align: center;
   justify-content: center;
 }
 

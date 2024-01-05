@@ -20,6 +20,10 @@ body {
   display: none;
 }
 
+:root {
+  --main-blue: rgba(59, 130, 246, 255);
+}
+
 /* log in promp open */
 .login {
   height: 110rem;
@@ -300,9 +304,16 @@ input:focus .userbox {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px 0px;
+  padding: 0px 0px;
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
+}
+
+.inner-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
 
 }
 
@@ -331,12 +342,13 @@ input:focus .userbox {
   flex-direction: row;
   justify-content: center;
   box-shadow: #202022f7 0px 0px 20px 10px;
-  margin: 10vh 40px;
+  margin: 10vh 20px;
   text-align: center;
   overflow: hidden;
-  width: 90%;
+  width: 80%;
   height: fit-content;
-  padding: 40px;
+  padding: 10px;
+  
 }
 
 
@@ -374,7 +386,7 @@ label ,.con-in{
 
 
 .contact-form > form {
-max-width: 500px;
+max-width: 100%;
 margin: 0 auto;
 text-align: left;
 padding: 20px 0;
