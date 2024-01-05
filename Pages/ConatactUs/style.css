@@ -261,6 +261,12 @@ input:focus .userbox {
 /* open main */
 
 /* section 1 open */
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .topheader {
   background: linear-gradient(#352f44, #222831);
@@ -368,7 +374,7 @@ input:focus .userbox {
   box-sizing: border-box;
   text-align: center;
   max-width: 1320px;
-  /*margin: 0 auto;*/
+  margin: 0 auto;
   padding: 5%;
 }
 label ,.con-in{

@@ -60,42 +60,16 @@
        <p>Question not answered yet? We are here to help!</p>
        <form action="" onsubmit="sendEmail(); reset(); return false;">
          <label for="name">Name</label>
-         <input class="con-in" type="text" name="name" id="name">
+         <input class="con-in" type="text" name="name" id="name" required>
          <label for="email">Email: </label>
-         <input class="con-in" type="email" name="email" id="email">
+         <input class="con-in" type="email" name="email" id="email" required>
          <label for="subject">subject: </label>
-         <input class="con-in" type="text" name="subject" id="subject">
-         <label for="message">message</label>
-         <textarea name="message" cols="30" rows="10" ></textarea>
-         <input type="submit" value="send" class="submit-button">
+         <input class="con-in" type="text" name="subject" id="subject" require>
+         <label for="message" ">message</label>
+         <textarea name="message" id="message"  cols="30" rows="10" ></textarea>
+         <input type="submit" onclick="check()" value="send" class="submit-button">
        </form>
       </div>
-      <script src="https://smtpjs.com/v3/smtp.js">
-      </script>
-      <script>
-        var btn = document.getElementById('btn');
-        btn.addEventListener('click' , function (e){
-          e.preventDefault()
-          var name = document.getElementById('name').value;
-          var email = document.getElementById('email').value;
-          var subject = document.getElementById('subject').value;
-          var message= document.getElementById('message').value;
-          var body = 'name: '+name +'<br/> email: '+ email + '<br/> subject: '+subject + '<br/> message: ' + message;
-
-
-          Email.send({
-    SecureToken : "54bcded3-97d0-463d-bfe8-5427a29b37c3",
-    To : 'mahisa.academic@gmail.com',
-    From : "codico@gmail.com",
-    Subject : "contact message",
-    Body : body
-}).then(
-  message => alert(message)
-);
-
-
-        })
-      </script>
   </main>
   <!-- main section end -->
   <!-- footer section start -->
@@ -103,7 +77,9 @@
 
   </footer>
   <!-- footer section end -->
-  <script src="script.js"></script>
+  <script src="script2.js"></script>
+  </script>
+
 
 </body>
 
