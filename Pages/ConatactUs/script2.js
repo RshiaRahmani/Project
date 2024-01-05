@@ -7,3 +7,4 @@ function UserBox(){
         document.getElementById('userbox').style.display = 'none';
     }
 }
+

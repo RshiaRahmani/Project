@@ -322,11 +322,12 @@ input:focus .userbox {
   text-align: center;
   margin: 0px 0px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 20px 0px;
   width: 100%;
   margin: auto;
-
+  row-gap: 100px;
 }
 
 .card1 {
