@@ -72,7 +72,7 @@ body {
   overflow: hidden;
 }
 
-.login h6  {
+.login h6 , footer h4  {
   float: left;
   margin-left: 8%;
   margin-top: 5px;
@@ -407,17 +407,15 @@ table td button:hover{
 
 /* section 3 close */
 
-
-/* close main */
-
 /* open footer */
-
 .footer{
   background-color: #202022;
   overflow: hidden;
 }
 .containerr{
- padding: 5% 10%;
+ padding: 5%;
+ display: flex;
+ justify-content: center;
 
 }
 .row {
@@ -444,20 +442,37 @@ table td button:hover{
   
 }
 .footer-col:first-child ul li{
-  margin-bottom: 10px;
-  
+  margin-bottom: 10px;  
 }
-.footer-col:first-child a{
 
-}
 
 .footer-col ul A, .footer ul li{
   color: gray;
   text-decoration: none;
   vertical-align: 5px;
 }
+.footer-col:nth-child(4){
+  text-align: center;
+}
+.footer-col:first-child li{
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.footer-col:first-child ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-col:first-child img{
+  border-radius: 5px;
+}
 .social-links ul a{
   margin: 0px 5px;
+  transition: all ease 0.2s;
 
 }
 .social-links ul a i{
@@ -467,6 +482,15 @@ table td button:hover{
   border-radius: 15px;
   text-align: center;
   padding: 8px;
-  
+
 }
-/* close footer */
+.social-links ul a:hover {
+  width: 20px;
+  font-size: 3vh;
+  border: 2px solid gray;
+  background: gray;
+  color: black;
+  border-radius: 15px;
+  text-align: center;
+  padding: 8px;
+}
