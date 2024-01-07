@@ -85,7 +85,7 @@ function calc(){
                     }else{
                         alert('application withdrawn')
                     }
-                  }, 1);
+                  }, 0);
             
     
             }else{
