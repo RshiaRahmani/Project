@@ -20,20 +20,9 @@ body {
   display: none;
 }
 
-:root {
-  --main-blue: rgba(59, 130, 246, 255);
-}
-
-main,
-navbar {
-  filter: blur(1.5rem) saturate(0.7);
-  transition: all ease 0.6s;
-
-}
-
 /* log in promp open */
 .login {
-  overflow: hidden;
+  height: 110rem;
   width: 100%;
   position: absolute;
   z-index: 5;
@@ -42,7 +31,7 @@ navbar {
 
 .login div:first-child {
   color: #d8d4d4;
-  height: fit-content;
+  height: 50vh;
   width: 40%;
   position: fixed;
   background: linear-gradient(#352f44, #222831);
@@ -69,7 +58,7 @@ navbar {
 #LGinp1:focus,
 #LGinp2:focus {
   outline: none;
-  box-shadow: var(--main-blue) 0px 0px 5px 2px;
+  box-shadow: rgba(59, 130, 246, 255) 0px 0px 5px 2px;
 }
 
 .login form {
@@ -96,7 +85,7 @@ navbar {
 
 .login h4 {
   text-decoration: underline;
-  text-decoration-color: var(--main-blue);
+  text-decoration-color: rgba(59, 130, 246, 255);
   font-size: 90%;
 }
 
@@ -104,7 +93,7 @@ navbar {
 
   color: white;
   text-decoration: none;
-  border: 3px solid var(--main-blue);
+  border: 3px solid rgba(59, 130, 246, 255);
   padding: 5px 40px;
   margin: 20px 0px;
   border-radius: 10px;
@@ -114,7 +103,6 @@ navbar {
 /* log in promp close */
 
 /* open navbar */
-
 
 navbar {
   background: linear-gradient(#ffffff, #e0dedede);
@@ -169,18 +157,18 @@ navbar ul li a {
 }
 
 navbar ul li:nth-child(4) a {
-  border: 3px solid var(--main-blue);
+  border: 3px solid rgba(59, 130, 246, 255);
   padding: 6px 8px;
   border-radius: 6px;
-  color: var(--main-blue);
-  box-shadow: var(--main-blue) 0px 0px 10px 1px;
+  color: rgba(59, 130, 246, 255);
+  box-shadow: rgba(59, 130, 246, 255) 0px 0px 10px 1px;
   font-weight: 900;
   text-decoration: none;
   transition: all ease 0.1s;
 }
 
 navbar ul li:nth-child(4) a:hover {
-  background-color: var(--main-blue);
+  background-color: rgba(59, 130, 246, 255);
   color: white;
 }
 
@@ -198,7 +186,7 @@ navbar div input {
 
 navbar div input:focus {
   background: rgb(232, 232, 232);
-  box-shadow: var(--main-blue) 0px 0px 25px 2px;
+  box-shadow: rgba(59, 130, 246, 255) 0px 0px 25px 2px;
   outline: none;
 }
 
@@ -285,9 +273,7 @@ input:focus .userbox {
 
 .headershodow {
   background-color: rgba(0, 0, 255, 0);
-  box-shadow: rgb(64, 64, 224) 275px 400px 1000px 220px;
-  width: 0.5%;
-  height: 0.5%;
+  box-shadow: rgba(84, 64, 224, 0.689) 0px 110px 1000px 200px;
   margin: auto;
   border-radius: 100%;
 
@@ -295,44 +281,35 @@ input:focus .userbox {
 
 .section1 {
   display: flex;
-  margin-top: 110px;
+  justify-content: center;
+  font-size: 500%;
+  margin-top: 20VH;
   padding: 10px 60px;
   color: #d8d4d4;
 }
 
-.section1 div h1 {
-  font-size: 350%;
-  margin-top: 5%;
-}
-
-.section1 div {
-  width: 500%;
-}
-
-.section1 div img {
-  filter: saturate(1.3);
-}
 
 /* section 1 close */
 
 /* section 2 open */
-
+.section2 img{
+  
+}
 .container {
   color: #1d1d1f;
   text-align: center;
   margin: 0px 0px;
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
   justify-content: center;
   padding: 20px 0px;
   width: 100%;
   margin: auto;
-  row-gap: 100px;
+
 }
 
 .card1 {
-  background: linear-gradient(-45deg, var(--main-blue), rgba(159, 150, 246, 255));
+  background: linear-gradient(-45deg, rgba(59, 130, 246, 255), rgba(159, 150, 246, 255));
   width: 20%;
   height: 11em;
   display: inline-block;
@@ -342,68 +319,6 @@ input:focus .userbox {
   overflow: hidden;
   transition: all ease-out 0.5s;
 }
-
-.card1:hover {
-  background: linear-gradient(-45deg, var(--main-blue), rgba(159, 150, 246, 255));
-  width: 20%;
-  height: 25em;
-  display: inline-block;
-  border-radius: 20px;
-  padding: 4px;
-  margin: 10px 1%;
-  overflow: hidden;
-  box-shadow: var(--main-blue) 0px 0px 10px 3px;
-}
-
-.card1 div div:first-child {
-  font-size: 110%;
-  width: 100%;
-  height: 20vh;
-  border-radius: 20px;
-  background: linear-gradient(-45deg, rgba(19, 130, 246, 255), rgba(159, 150, 246, 255));
-  text-align: center;
-  clip-path: circle(65% at 50% 1%);
-  padding-top: 25px;
-}
-
-.card1 div:first-child {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  background: linear-gradient(135deg, #151516, #202022);
-}
-
-.card1 div:nth-child(2) h4 {
-  margin-top: 20px;
-  padding: 0px 15px;
-  text-align: justify;
-  color: rgb(203, 199, 199);
-}
-
-.card1 div:nth-child(2) a {
-  background: #1d1d1f;
-  color: white;
-  text-decoration: none;
-  border: 3px solid var(--main-blue);
-  padding: 5px 40px;
-  margin-top: 0px;
-  border-radius: 10px;
-  transition: all ease 0.5s;
-}
-
-.card1 div:nth-child(2) a:hover {
-  background: linear-gradient(-45deg, rgba(19, 130, 246, 255), rgba(159, 150, 246, 255));
-  color: #1d1d1f;
-  text-decoration: none;
-  border: 2px solid rgba(59, 130, 246, 155);
-  padding: 5px 70px;
-  border-radius: 20px;
-}
-
-/* section 2 close */
-
-/* section 3 open */
-
 .section2 {
   border-radius: 30px;
   background: linear-gradient(135deg, #1d1d1f, #202022);
@@ -412,36 +327,45 @@ input:focus .userbox {
   flex-direction: row;
   justify-content: center;
   box-shadow: #202022f7 0px 0px 20px 10px;
-  margin: 50px 40px;
+  margin: 10vh 40px;
   text-align: center;
   overflow: hidden;
+  width: 90%;
+  height: fit-content;
+  padding: 40px;
 }
+.section2 h1{
+  text-align: center;
+  text-decoration: solid;
+  color: gray;
+  font-size: xx-large;
+  opacity:inherit;
+}
+
+/* section 2 close */
+
+/* section 3 open */
+
+
 
 
 .section2 div {
   width: 50%;
   text-align: center;
+  justify-content: center;
 }
 
-.section2 div:first-child {
+.programmers {
   display: flex;
+  width: 100%;
+  justify-content: center;
   flex-direction: column;
-  box-shadow: #202022 0px 0px 10px 0px;
-  padding: 80px;
-  color: #d8d4d4;
-  text-align: justify;
-  filter: opacity(0.6);
 }
 
-.section2 div:last-child {
-  width: 40%;
-  filter: opacity(1);
-  background: url(Content/Section\ 3/test2.png);
-  background-size: cover;
-  clip-path: circle(75% at 80% 40%);
-}
+
 
 /* section 3 close */
+
 
 /* close main */
 
@@ -532,5 +456,3 @@ input:focus .userbox {
   text-align: center;
   padding: 8px;
 }
-  
-/* close footer */

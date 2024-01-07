@@ -16,6 +16,10 @@ body {
   font-family: ubunto;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* log in promp open */
 .login {
   height: 110rem;
@@ -63,7 +67,7 @@ body {
   overflow: hidden;
 }
 
-.login h6 {
+.login h6 , footer h4  {
   float: left;
   margin-left: 8%;
   margin-top: 5px;
@@ -79,9 +83,9 @@ body {
   margin: 0px;
 }
 
-.login h4{
+.login h4 {
   text-decoration: underline;
-  text-decoration-color: rgba(59, 130, 246, 255) ;
+  text-decoration-color: rgba(59, 130, 246, 255);
   font-size: 90%;
 }
 
@@ -99,7 +103,6 @@ body {
 /* log in promp close */
 
 /* open navbar */
-
 
 navbar {
   background: linear-gradient(#ffffff, #e0dedede);
@@ -124,7 +127,7 @@ navbar div {
   align-items: center;
 }
 
-navbar div a{
+navbar div a {
   text-decoration: none;
   color: #222831;
 }
@@ -153,7 +156,7 @@ navbar ul li a {
   overflow: hidden;
 }
 
-navbar ul li:nth-child(3) a {
+navbar ul li:nth-child(4) a {
   border: 3px solid rgba(59, 130, 246, 255);
   padding: 6px 8px;
   border-radius: 6px;
@@ -164,7 +167,7 @@ navbar ul li:nth-child(3) a {
   transition: all ease 0.1s;
 }
 
-navbar ul li:nth-child(3) a:hover {
+navbar ul li:nth-child(4) a:hover {
   background-color: rgba(59, 130, 246, 255);
   color: white;
 }
@@ -276,7 +279,7 @@ input:focus .userbox {
 
 .headershodow {
   background-color: rgba(0, 0, 255, 0);
-  box-shadow: rgba(84,64, 224, 0.689) 0px 110px 1000px 200px;
+  box-shadow: rgba(84, 64, 224, 0.689) 0px 110px 1000px 200px;
   margin: auto;
   border-radius: 100%;
 
@@ -366,96 +369,10 @@ input:focus .userbox {
 
 /* section 3 close */
 
-/* contact us form */
 
-.contact-form{
-  margin-top: 5%;
-  padding: 0;
-  box-sizing: border-box;
-  text-align: center;
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 5%;
-}
-label ,.con-in{
-  display: block;
-}
-
-
-.contact-form > form {
-max-width: 500px;
-margin: 0 auto;
-text-align: left;
-padding: 20px 0;
-
-}
-
-.contact-form > h1{
-  font-family: "ubunto";
-  font-size: 59px;
-  color: #d8d4d4;
-  font-weight: 600;
-  padding-bottom:20px ;
-}
-
-.contact-form > p{
-  color:#d8d4d4 ;
-
-}
-.contact-form >p , .con-in,textarea,label {
-  font-family: "ubunto";
-}
-/*.contact-form >*/ .con-in,textarea,label {
-  display: block;
-  margin: 0 auto ;
-  width: 100%;
-  color: #d8d4d4;
-}
-/*.contact-form >*/ .con-in,textarea{ 
-background-color: transparent;
-border: 0;
-border-bottom: 2px solid #d8d4d4;
-}
-.submit-button{
-  background-color:rgba(84,64, 224, 0.689) ;
-  padding: 15px 0;
-  color: white;
-  font-size: 18px;
-  font-family:"ubunto" ;
-  border: none;
-  margin-top: 30px;
-  cursor: pointer;
-  transition: all .3s ease;
-  display: block;
-  width: 100%;
-}
-.submit-button:hover{
-  background: #fff;
-  color: #1b1c1e;
-}
-/*.container >*/ .con-in, textarea {
-  color:#d8d4d4 ;
-  font-size: 18px;
-  padding: 10px;
-}
-/*.contact-form> */.con-in:focus, textarea:focus {
-  outline:1px solid #d8d4d4;
-}
-
-.contact-form >a{
-  color: #556080;
-  font-style: italic;
-}
 /* close main */
 
 /* open footer */
 
 
 /* close footer */
-
-
-/* general css */
-
-body{
-  margin-bottom: 5%;
-}
