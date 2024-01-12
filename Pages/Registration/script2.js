@@ -170,4 +170,22 @@ function calc(){
 
 }
 
+function pricelist(){
+    console.log('salam')
+    if(document.getElementById('Presenter').checked){
+        
+        document.getElementById('se1').innerHTML = '<input type="checkbox" name="Session" id="session1"> Session 1 - 100Є';
+        document.getElementById('se2').innerHTML = '<input type="checkbox" name="Session" id="session2"> Session 1 - 200Є';
+        document.getElementById('se3').innerHTML = '<input type="checkbox" name="Session" id="session3"> Session 1 - 300Є';
+        document.getElementById('se4').innerHTML = '<input type="checkbox" name="Session" id="session4"> Session 1 - 400Є';
+        
+    }else {
+
+        document.getElementById('se1').innerHTML = '<input type="checkbox" name="Session" id="session1"> Session 1 - 50Є';
+        document.getElementById('se2').innerHTML = '<input type="checkbox" name="Session" id="session2"> Session 1 - 100Є';
+        document.getElementById('se3').innerHTML = '<input type="checkbox" name="Session" id="session3"> Session 1 - 150Є';
+        document.getElementById('se4').innerHTML = '<input type="checkbox" name="Session" id="session4"> Session 1 - 200Є';
+    }
+}
+
 //Registration page Calculation closes
