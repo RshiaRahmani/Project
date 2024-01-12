@@ -20,6 +20,10 @@ body {
   display: none;
 }
 
+:root {
+  --main-blue: rgba(59, 130, 246, 255);
+}
+
 /* log in promp open */
 .login {
   height: 110rem;
@@ -67,7 +71,7 @@ body {
   overflow: hidden;
 }
 
-.login h6 {
+.login h6 , footer h4  {
   float: left;
   margin-left: 8%;
   margin-top: 5px;
@@ -300,9 +304,16 @@ input:focus .userbox {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px 0px;
+  padding: 0px 0px;
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
+}
+
+.inner-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
 
 }
 
@@ -331,12 +342,13 @@ input:focus .userbox {
   flex-direction: row;
   justify-content: center;
   box-shadow: #202022f7 0px 0px 20px 10px;
-  margin: 10vh 40px;
+  margin: 10vh 20px;
   text-align: center;
   overflow: hidden;
-  width: 90%;
+  width: 80%;
   height: fit-content;
-  padding: 40px;
+  padding: 10px;
+  
 }
 
 
@@ -357,10 +369,173 @@ input:focus .userbox {
 
 /* section 3 close */
 
+/* contact us form */
+
+.contact-form{
+  margin-top: 5%;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 5%;
+}
+label ,.con-in{
+  display: block;
+}
+
+
+.contact-form > form {
+max-width: 100%;
+margin: 0 auto;
+text-align: left;
+padding: 20px 0;
+
+}
+
+.contact-form > h1{
+  font-family: "ubunto";
+  font-size: 59px;
+  color: #d8d4d4;
+  font-weight: 600;
+  padding-bottom:20px ;
+}
+
+.contact-form > p{
+  color:#d8d4d4 ;
+
+}
+.contact-form >p , .con-in,textarea,label {
+  font-family: "ubunto";
+}
+/*.contact-form >*/ .con-in,textarea,label {
+  display: block;
+  margin: 0 auto ;
+  width: 100%;
+  color: #d8d4d4;
+}
+/*.contact-form >*/ .con-in,textarea{ 
+background-color: transparent;
+border: 0;
+border-bottom: 2px solid #d8d4d4;
+}
+.submit-button{
+  background-color:rgba(84,64, 224, 0.689) ;
+  padding: 15px 0;
+  color: white;
+  font-size: 18px;
+  font-family:"ubunto" ;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all .3s ease;
+  display: block;
+  width: 100%;
+}
+.submit-button:hover{
+  background: #fff;
+  color: #1b1c1e;
+}
+/*.container >*/ .con-in, textarea {
+  color:#d8d4d4 ;
+  font-size: 18px;
+  padding: 10px;
+}
+/*.contact-form> */.con-in:focus, textarea:focus {
+  outline:1px solid #d8d4d4;
+}
+
+.contact-form >a{
+  color: #556080;
+  font-style: italic;
+}
 
 /* close main */
 
 /* open footer */
+.footer{
+  background-color: #202022;
+  overflow: hidden;
+}
+.containerr{
+ padding: 5%;
+ display: flex;
+ justify-content: center;
+
+}
+.row {
+  display: flex;
+  width: 80%;
+  text-align: left;
+  flex-direction: row;
+  white-space: nowrap;
+  justify-content: space-between;
+  align-items: start;
+}
+.footer-col h1{
+  color:rgb(102, 101, 113);
+  margin-bottom: 20px;
+}
+.footer-col  ul{
+  list-style-type: none;
+  padding-inline-start: 10px;
+  vertical-align: 5px;
+}
+
+.footer-col:first-child ul{
+  font-size: 85%;
+  
+}
+.footer-col:first-child ul li{
+  margin-bottom: 10px;  
+}
 
 
-/* close footer */
+.footer-col ul A, .footer ul li{
+  color: gray;
+  text-decoration: none;
+  vertical-align: 5px;
+}
+.footer-col:nth-child(4){
+  text-align: center;
+}
+.footer-col:first-child li{
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.footer-col:first-child ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-col:first-child img{
+  border-radius: 5px;
+}
+.social-links ul a{
+  margin: 0px 5px;
+  transition: all ease 0.2s;
+
+}
+.social-links ul a i{
+  width: 20px;
+  font-size: 3vh;
+  border: 2px solid gray;
+  border-radius: 15px;
+  text-align: center;
+  padding: 8px;
+
+}
+.social-links ul a:hover {
+  width: 20px;
+  font-size: 3vh;
+  border: 2px solid gray;
+  background: gray;
+  color: black;
+  border-radius: 15px;
+  text-align: center;
+  padding: 8px;
+}

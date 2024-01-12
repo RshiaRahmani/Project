@@ -5,9 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script type="text/javascript" src="script2.js"></script>
   <link rel="icon" href="Content/Icon.png" type="image/icon type" />
-  <title>Codico | Home</title>
+  <title>Codico | CONTACTUS</title>
 </head>
 
 <body>
@@ -24,7 +25,7 @@
 
         <ul>
           <li><a href="../../index.html">Home</a></li>
-          <li><a href="#">Info</a></li>
+          <li><a href="../Info/index.html">Info</a></li>
           <li><a href="index.html">Contact us</a></li>
           <li><a href="../Registration/index.html">JOIN NOW</a></li>
         </ul>
@@ -49,29 +50,102 @@
       
 
       <div id="info" class="container">
-        <div class="section1">
-          <h1>{ CONTACT US }</h1>
+        
+        <div class="inner-container">
+          <div class="section2">
+          
+        
+            <div class="contact-form">
+             <h1>{Contact us}</h1>
+             <p>Question not answered yet? We are here to help!</p>
+             <form action="" onsubmit="sendEmail(); reset(); return false;">
+               <label for="name">Name</label>
+               <input class="con-in" type="text" name="name" id="name" required>
+               <label for="email">Email: </label>
+               <input class="con-in" type="email" name="email" id="email" required>
+               <label for="subject">subject: </label>
+               <input class="con-in" type="text" name="subject" id="subject" require>
+               <label for="message" ">message</label>
+               <textarea name="message" id="message"  cols="30" rows="10" ></textarea>
+               <input type="submit" onclick="check()" value="send" class="submit-button">
+             </form>
         </div>
-        <div class="section2">
-          <div class="card1">
-            <div class="programmers">
-              <img src="" alt="">
-            </div>
-          </div>
-          <div class="card1"></div>
-          <div class="card1"></div>
+
+          
          </div>
+         
       
        
       </div>
-      
-  </main>
-  <!-- main section end -->
-  <!-- footer section start -->
-  <footer>
 
+      <div id="info" class="container">
+        
+      
+       
+
+
+   <!-- footer section start -->
+   <footer class="footer">
+  
+    <div class="containerr">
+
+      <div class="row">
+
+        <div class="footer-col">
+
+          <ul>
+            <li><img src="Content/Icon.png" width="60px" alt="">Designed and built with blood, sweat <br> and tears by trio from CIU.</li>
+            <a href="https://www.google.com/maps/search/ciu/@35.2158236,33.4167338,16z/data=!3m1!4b1?entry=ttu"><img src="Content/footer/loc.jpg" alt="" width="199px" height="120px"></a>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h1>Company</h1>
+          <ul>
+            <li><a href="../Info/index.html">About us</a></li>
+            <li><a href="../ConatactUs/index.html">Contact us</a></li>
+            <li><a href="../Info/index.html">FAQ</a></li>
+          </ul>
+        </div>
+  
+  
+        <div class="footer-col">
+          <h1>Links</h1>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="../Info/index.html">Docs</a></li>
+            <li><a href="../Registration/index.html">Registration</a></li>
+
+          </ul>
+        </div>
+  
+  
+        <div class="footer-col">
+          <h1>Social Media</h1>
+          <div class="social-links">
+            <ul>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </ul>
+          </div>
+
+          
+          <h4>Currently BETA v0.0.01.</h4>
+      </div>
+
+      </div>
+  
+  
+  
   </footer>
   <!-- footer section end -->
+  </main>
+  <!-- main section end -->
+ 
+
+
   <script src="script.js"></script>
 
 </body>
